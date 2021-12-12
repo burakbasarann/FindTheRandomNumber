@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundsplash">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="0 ile 100 Arasında Random Sayıyı Bul"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="70dp"
+        android:hint="Hangi Sayı Sence?"
+        app:counterEnabled="true"
+        app:counterMaxLength="3"
+        app:endIconDrawable="@drawable/ic_baseline_check_circle"
+        app:endIconMode="custom"
+        app:helperText="0 ile 100 Arasında Unutma!"
+        app:helperTextTextColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:startIconDrawable="@drawable/ic_baseline_self">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtrapor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <ImageView
+        android:id="@+id/can1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_healing"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="100dp"/>" />
+
+    <ImageView
+        android:id="@+id/can2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/can1"
+        app:srcCompat="@drawable/ic_baseline_healing"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/can3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/can2"
+        app:srcCompat="@drawable/ic_baseline_healing"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/can4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/can3"
+        app:srcCompat="@drawable/ic_baseline_healing"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/can5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/can4"
+        app:srcCompat="@drawable/ic_baseline_healing"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
